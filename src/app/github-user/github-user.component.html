@@ -1,4 +1,4 @@
-<div *ngIf="user">
-  {{user.name}}
-  {{user.blog}}
+<div *ngIf="user | async as user$">
+  {{user$.name}}
+  {{user$.blog}}
 </div>

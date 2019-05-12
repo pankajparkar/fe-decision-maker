@@ -12,9 +12,7 @@ export class GithubUserComponent implements OnInit {
   constructor(private http: HttpClient) { }
 
   getUserDetails (){
-    this.http.get('https://api.github.com/users/pankajparkar').subscribe(
-      user => this.user = user
-    )
+    this.user = this.http.get('https://api.github.com/users/pankajparkar');
   }
 
   ngOnInit() {
