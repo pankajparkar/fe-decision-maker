@@ -18,6 +18,7 @@ export class GithubUserComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.getUserDetails();
   }
 
 }
