@@ -1,3 +1,10 @@
-<p>
-  github-repository works!
-</p>
+<div>
+    <h3>Repositories</h3>
+  <ul>
+    <li *ngFor="let repo of repos$ | async">
+      <a [href]="repo.html_url" target="_blank">
+        {{repo.name}}
+      </a>
+    </li>
+  </ul>
+</div>
