@@ -1,0 +1,8 @@
+<p>
+  Repositories Search for: {{query}}
+</p>
+<ul>
+  <li *ngFor="let package of (packages$ | async)?.results">
+    {{package.package.name}}
+  </li>
+</ul>
