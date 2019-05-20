@@ -8,6 +8,7 @@ import { GithubRepositoryComponent } from './github-repository/github-repository
 import { GithubUserComponent } from './github-user/github-user.component';
 import { GithubSearchRepositoryComponent } from './github-search-repository/github-search-repository.component';
 import { NpmSearchRepositoryComponent } from './npm-search-repository/npm-search-repository.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { NpmSearchRepositoryComponent } from './npm-search-repository/npm-search
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
