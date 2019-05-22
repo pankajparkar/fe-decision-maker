@@ -2,7 +2,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 
+import { MatToolbarModule } from '@angular/material';
 import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
 import { GithubRepositoryComponent } from './github-repository/github-repository.component';
 import { GithubUserComponent } from './github-user/github-user.component';
@@ -24,7 +26,10 @@ import { NavbarComponent } from './navbar/navbar.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+
+    // Material module 
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
