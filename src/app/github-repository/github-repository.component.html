@@ -1,10 +1,11 @@
-<div>
-    <h3>Repositories</h3>
-  <ul>
-    <li *ngFor="let repo of repos$ | async">
+<mat-list>
+  <h3 mat-subheader>Repositories</h3>
+  <mat-list-item *ngFor="let repo of repos$ | async">
+    <mat-icon mat-list-icon>folder</mat-icon>
+    <h4 mat-line>
       <a [href]="repo.html_url" target="_blank">
         {{repo.name}}
       </a>
-    </li>
-  </ul>
-</div>
+    </h4>
+  </mat-list-item>
+</mat-list>

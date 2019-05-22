@@ -1,8 +1,7 @@
-<p>
-  Repositories Search for: {{query}}
-</p>
-<ul>
-  <li *ngFor="let repository of (repositories$ | async)?.items">
-    {{repository.name}}
-  </li>
-</ul>
+<mat-list>
+  <h3 mat-subheader>Repositories Search for: {{query}}</h3>
+  <mat-list-item *ngFor="let repository of (repositories$ | async)?.items">
+    <mat-icon mat-list-icon>folder</mat-icon>
+    <h4 mat-line>{{repository.name}}</h4>
+  </mat-list-item>
+</mat-list>
