@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 
-import { MatToolbarModule, MatIconModule, MatListModule } from '@angular/material';
+import { MatToolbarModule, MatIconModule, MatListModule, MatCardModule } from '@angular/material';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
@@ -31,7 +31,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     // Material module 
     MatToolbarModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

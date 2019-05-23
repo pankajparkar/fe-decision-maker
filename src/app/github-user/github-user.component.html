@@ -1,4 +1,16 @@
-<div *ngIf="user | async as user$">
-  {{user$.name}}
-  {{user$.blog}}
-</div>
+<mat-card class="user-card" *ngIf="user | async as user$">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>{{user$.name}}</mat-card-title>
+    <mat-card-subtitle>{{user$.company}}</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image [src]="user$.avatar_url" alt="Photo of a Shiba Inu">
+  <mat-card-content>
+    <p>
+      {{user$.bio}}
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <a mat-button [href]="'https://github.com/' + user$.login" target="_blank">Open Profile</a>
+  </mat-card-actions>
+</mat-card>
